@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spd', 'kpd', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];
+        parties = ['lwusp', 'cps', 'wpb', 'pfjp', 'cwusp', 'rwusp', 'nfp'];
     }
     if (!partyColors) {
-        partyColors = {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0'};
+        partyColors = {'cps': '#E3000F', 'pfjp': '#03c2fc', 'wpb': '#DCCA4A', 'nfp': '#000', 'lwusp': '#2b2673', 'cwusp': '#472d4d', 'rwusp': '#25003b'};
     }
     if (!partyNames) {
-        partyNames = {'spd': 'SPD', 'kpd': 'KPD', 'ddp': 'DDP', 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others'};
+        partyNames = {'lwusp': 'USP (Reformists)', 'cps': 'CPS', 'wpb': 'WPB', 'pfjp': 'PFJP', 'cwusp': 'USP (Moderates)', 'rwusp': 'USP (Sollists)', 'nfp': 'NFP'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
